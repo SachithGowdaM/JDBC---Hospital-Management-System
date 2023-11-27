@@ -1,45 +1,44 @@
 # Hospital Management System
 
-This is a Java-based Hospital Management System designed to facilitate the management of patients, doctors, and appointments within a hospital setting. The system utilizes a MySQL database to store and retrieve information.
+This is a simple Java program for a Hospital Management System using a MySQL database for storing patient information, doctor details, and appointments. The system allows users to add patients, view patients, view doctors, and book appointments.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
 
 ## Prerequisites
 
-Before running the application, ensure that you have the following installed:
-
 - Java Development Kit (JDK)
-- MySQL Database
-- MySQL Connector/J (JDBC Driver)
+- MySQL Database Server
+- MySQL Connector/J JDBC Driver
 
-## Configuration
+## Setup
 
-1. **Database Configuration:**
-   Update the database connection details in the `HospitalManagementSystem` class:
+1. Install the Java Development Kit (JDK) on your system.
+
+2. Set up a MySQL Database Server. Create a database named `hospital_management_system`.
+
+3. Update the database connection details in the code:
 
    ```java
-   private static final String url = "jdbc:mysql://localhost:3306/hospital";
+   private static final String url = "jdbc:mysql://localhost:3306/yourDatabaseName";
    private static final String username = "root";
-   private static final String password = "Admin@123";
-   
+   private static final String password = "MySQLPassword";
+
+
 ## Usage
 
-1. Compile: javac HospitalManagementSystem.java
-2. Run: java HospitalManagementSystem
-3. Operations:
-      Add Patient
-      View Patients
-      View Doctors
-      Book Appointment
-      Exit
-   
-## Features
-    Add Patient: Add a new patient.
-    View Patients: Display all patients.
-    View Doctors: Display all doctors.
-    Book Appointment: Schedule appointments, considering doctor availability.
-      
-## Notes
-    MySQL database required.
-    Date format for appointments: "YYYY-MM-DD".
-      
-## Contribution
-    Feel free to explore and modify. Contributions are welcome!
+1. Run the `HospitalManagementSystem` class.
+The program provides a simple text-based interface for interacting with the Hospital Management System. Follow the on-screen instructions to add patients, view patients, view doctors, and book appointments.
+
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or create a pull request.
+
+This project uses the MySQL database for data storage.
+Special thanks to the [MySQL](https://www.mysql.com/) and [Java](https://www.oracle.com/java/) communities.
